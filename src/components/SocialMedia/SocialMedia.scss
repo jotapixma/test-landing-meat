@@ -1,0 +1,36 @@
+@import "../../styles/settings";
+
+$circle-size: 62px;
+
+
+.rrss-section{
+
+    .rrss-box{
+        height: $circle-size;
+        width: $circle-size;
+        border-radius: $circle-size;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 8px;
+
+        &.fb{
+            border: 3px solid $blue;
+        }
+        &.ins{
+            border: 3px solid $red;
+        }
+        &.ytb{
+            border: 3px solid $yellow;
+        }
+
+        &:hover{
+    
+            img{
+                transition: all 300ms ease-in-out;
+                transform: scale(1.1);
+            }
+        }
+
+    }
+}

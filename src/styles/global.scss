@@ -1,0 +1,61 @@
+@import "settings";
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.super-title{
+    font-family: 'Caveat', cursive;
+    font-size: 80px;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+.card-container {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.07217);
+    border-radius: 8px;
+    padding: 1rem;
+
+    &.hard{
+      box-shadow: 0px 1px 8px rgba(154, 154, 154, 0.103475), 0px 3px 3px rgba(178, 178, 178, 0.0988309), 0px 3px 11px #E8EAFC;
+    }
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    li{
+        text-decoration: none;
+        color: $gray;
+        a{
+            color: $gray;
+        }
+    }
+}
+
+button{
+
+    &.btn{
+        border-radius: 50px;
+        width: 170px;
+        height: 55px;
+    }
+
+    &.btn-warning{
+        background-color: $yellow;
+        color: $white;
+
+        &:hover{
+            background-color: $blue;
+            color: $white;
+            border: 0;
+        }
+    }
+}
